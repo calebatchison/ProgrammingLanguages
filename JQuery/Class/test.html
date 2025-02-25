@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Test</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+		<script>
+			$("document").ready(function()
+			{
+
+// false 
+console.log( document.getElementById("id") == $("#myid") ); 
+console.log( document.querySelectorAll("p") == $("p") ); 
+console.log( document.getElementById("id") == $("#myid")[0] ); 
+console.log( document.getElementById("id") == $("#myid").get(0) ); 
+// true 
+console.log( document.querySelectorAll("p")[0] == $("p")[0] ); 
+
+var elem = document.getElementById("myelem"); 
+elem = $(elem); 
+
+			});
+
+		</script>
+
+
+	</head>
+	<body>
+		<div id="myid"></div>
+		<div id="myelem"></div>
+		<p id="p1"></p>
+		<p id="p2"></p>
+	</body>
+</html>

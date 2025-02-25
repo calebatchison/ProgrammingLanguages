@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Fourth jQuery Demo</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+		<script>
+			$("document").ready(function()
+			{
+				let newText = $("<p>");
+				newText.append("<h1>I just replaced something.</h1></p>");
+				$("#textBox").html(newText);
+			});
+
+			<button type="button" onclick="doit();">Click Me!</button>
+
+		</script>
+		
+
+	</head>
+	<body>
+
+		<div id="textBox">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+
+	</body>
+</html>

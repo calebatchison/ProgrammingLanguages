@@ -1,0 +1,426 @@
+2. This code first hooks the browser ready function. Then it injects content into the browser.
+This example is a simple h1 tag. But it can be just about anything.
+
+<script>
+	$("document").ready(function()
+	{
+		$("body").append("<h1>We Love COP 4020</h1>");
+	});
+</script>
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. From the ready function this code adjusts the style of all h1 tags that it finds.
+Any CSS style can be altered.
+
+<script>
+	$("document").ready(function()
+	{
+		$("h1").css("border", "1px dotted green");
+	});
+</script>
+
+In HTML <h1>We Love COP 4020<h1>
+---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. You can set the CSS for a tag type with the first or last decorator.
+
+<script>
+	$("document").ready(function()
+	{
+		$("h1:first").css("border", "1px dotted green");
+//		$("h1:last").css("border", "1px dotted green");
+	});
+</script>
+
+---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. 
+
+<script>
+	$("document").ready(function()
+	{
+		let newText = $("<p>");
+		newText.append("<h1>I just replaced something.</h1>");
+		$("#textBox").html(newText);
+	});
+</script>
+
+fourth.html
+
+---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. 
+
+<script>
+	$("document").ready(function()
+	{
+		$("#textBox").on("click", whenMouseIsClicked);
+		$("#textBox").on("mouseleave", whenMouseLeaves);
+		$("#textBox").on("mouseenter", whenMouseEnters);
+
+		function whenMouseIsClicked()
+		{
+			$("#textBox").html("<h1>You clicked me.</h1>");
+		}
+
+		function whenMouseLeaves()
+		{
+			$("#textBox").html("<h1>Where are you going?</h1>");
+		}
+
+		function whenMouseEnters()
+		{
+			$("#textBox").html("<h1>Well hello!</h1>");
+		}
+
+	});
+</script>
+
+
+fifth.html
+
+------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6. 
+
+<script>
+	$("document").ready(function()
+	{
+
+		$("#show").on("click",function ()
+		{
+			$("#textBox").show();
+		});
+
+		$("#hide").on("click",function ()
+		{
+			$("#textBox").hide();
+		});
+
+	});
+</script>
+
+<style>
+	#textBox
+	{
+		display: none;
+	}
+</style>
+
+sixth.html
+
+------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. 
+
+<script>
+	$("document").ready(function()
+	{
+
+		$(".textCopy").hover(highlightCopy);
+		function highlightCopy()
+		{
+			$(this).toggleClass("highlight");
+		}
+
+	});
+</script>
+
+<style>
+	.highlight
+	{
+		text-shadow: 1px 1px#cccccc;
+	}
+</style>
+
+seventh.html
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8.
+
+<script>
+	$("document").ready(function()
+	{
+
+		$("#fade-in").on("click", function()
+		{
+			$("#textBox").fadeIn(3000,function()
+			{
+			});
+		});
+
+		$("#fade-out").on("click", function()
+		{
+			$("#textBox").fadeOut("fast",function()
+			{
+			});
+		});
+	});
+</script>
+
+<style>
+	#textBox
+	{
+		display: none;
+	}
+</style>
+
+eigth.html
+
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9.
+
+<script>
+	$("document").ready(function()
+	{
+
+		$("#slide-up").click(function()
+		{
+			$("#textBox").slideUp("slow","linear");
+		});
+
+		$("#slide-down").click(function()
+		{
+			$("#textBox").slideDown("slow","linear");
+		});
+
+		$("#toggleSlide").click(function()
+		{
+			$("#textBox").slideToggle("slow", function()
+			{
+			});
+		});
+
+	});
+
+</script>
+
+<style>
+</style>
+
+ninth.html
+
+------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.
+
+<script>
+	$("document").ready(function()
+	{
+		$("p").css("border","1px red dotted");
+		$("#header").css("border","1px blue solid");
+		$(".greenBorder").css("border","4px green dashed");
+	});
+
+</script>
+
+<style>
+</style>
+
+tenth.html

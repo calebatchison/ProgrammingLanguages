@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>Caleb's Puzzles</title>
+		
+        <!-- JQuerey Pull -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+
+        <style>
+            /* Menu Style */
+            #myMenu {
+                margin: 0px;
+            }
+
+            .puzzle-piece {
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-image: url("bridge2.jpg");
+                background-size: 600px 400px;
+                border: 1px solid black;
+            }
+            
+            #controls {
+                margin-top: 5px;
+            }
+
+            #puzzleContainer {
+                width: 600px;  /* Optional: size it to the full image dimensions */
+                height: 400px;
+                background-position: 0 0;
+                position: 100px 300px;
+                margin-left: 100px;
+            }
+
+            #piece1 {
+                background-position: 0 0;
+                top: 200px;
+                left: 700px;
+            }
+
+            #piece2 {
+                background-position: -200px 0;
+                top: 500px;
+                left: 100px;
+            }
+
+            #piece3 {
+                background-position: -400px 0;
+                top: 800px;
+                left: 600px;
+            }
+
+            #piece4 {
+                background-position: 0 -200px;
+                top: 850px;
+                left: 200px;
+            }
+
+            #piece5 {
+                background-position: -200px -200px;
+                top: 120px;
+                left: 300px;
+            }
+
+            #piece6 {
+                background-position: -400px -200;
+                top: 300px;
+                left: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Menu</h3>
+        <ul id="myMenu">
+            <a href="page1.html">Puzzle 1</a>
+            <a href="page2.html">Puzzle 2</a>
+        </ul>
+        <h1>Solve this puzzle!</h1>
+        <a>Use the buttons to solve the puzzle.</a>
+        <div id="controls">
+            <button id="btnUp">Up</button>
+            <button id="btnDown">Down</button>
+            <button id="btnLeft">Left</button>
+            <button id="btnRight">Right</button>
+        </div>
+
+        <div id="puzzleContainer">
+            <div id="piece1" class="puzzle-piece"></div>
+            <div id="piece2" class="puzzle-piece"></div>
+            <div id="piece3" class="puzzle-piece"></div>
+            <div id="piece4" class="puzzle-piece"></div>
+            <div id="piece5" class="puzzle-piece"></div>
+            <div id="piece6" class="puzzle-piece"></div>
+        </div>
+        <script>
+
+            $(document).ready(function(){
+                // 1. Turn #myMenu into a jQuery UI menu (optional but recommended)
+                $("#myMenu").menu();
+
+                $("#piece1").animate({
+                    top: "300px",
+                    left: "100px"
+                }, 2000);
+
+                // Animate piece 2 to its solved position
+                $("#piece2").animate({
+                    top: "300px",
+                    left: "300px"
+                }, 2000);
+
+                // Animate piece 3 to its solved position
+                $("#piece3").animate({
+                    top: "300px",
+                    left: "500px"
+                }, 2000);
+
+                // Animate piece 5 to its solved position
+                $("#piece5").animate({
+                    top: "500px",
+                    left: "300px"
+                }, 2000);
+
+                // Animate piece 6 to its solved position
+                $("#piece6").animate({
+                    top: "500px",
+                    left: "500px"
+                }, 2000);
+            });
+
+            $("#btnUp").click(function() {
+                $("#piece4").animate({
+                    top: "-=50px"
+                }, 200);
+            }); 
+
+            $("#btnDown").click(function() {
+                $("#piece4").animate({
+                    top: "+=50px"
+                }, 200);
+            }); 
+
+            $("#btnLeft").click(function() {
+                $("#piece4").animate({
+                    left: "-=50px"
+                }, 200);
+            }); 
+
+            $("#btnRight").click(function() {
+                $("#piece4").animate({
+                    left: "+=50px"
+                }, 200);
+            }); 
+        </script>
+    </body>
+</html>

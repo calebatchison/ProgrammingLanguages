@@ -20,7 +20,7 @@ function factorsOf(n) {
     return factors;
 }
 
-function solveProblem1(n) {
+function solveTriangle(n) {
     var triangleNum = triangleNumbers(n);
     var factors = factorsOf(triangleNum);
 

@@ -1,0 +1,8 @@
+		<button type="button" onclick="doit();">Click Me!</button>
+
+			function doit()
+			{
+				let newText = $("<p>");
+				newText.append("<h1>I just replaced psychology with computer science.</h1></p>");
+				$("#textBox").html(newText);
+			}
