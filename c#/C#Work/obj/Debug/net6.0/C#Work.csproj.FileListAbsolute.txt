@@ -1,0 +1,5 @@
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net6.0/C#Work.GeneratedMSBuildEditorConfig.editorconfig
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net6.0/C#Work.AssemblyInfoInputs.cache
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net6.0/C#Work.AssemblyInfo.cs
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net6.0/C#Work.csproj.CoreCompileInputs.cache
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net6.0/C#Work.sourcelink.json

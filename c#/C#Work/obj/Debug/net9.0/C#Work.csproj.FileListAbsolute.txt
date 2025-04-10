@@ -1,0 +1,15 @@
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/bin/Debug/net9.0/C#Work
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/bin/Debug/net9.0/C#Work.deps.json
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/bin/Debug/net9.0/C#Work.runtimeconfig.json
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/bin/Debug/net9.0/C#Work.dll
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/bin/Debug/net9.0/C#Work.pdb
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.GeneratedMSBuildEditorConfig.editorconfig
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.AssemblyInfoInputs.cache
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.AssemblyInfo.cs
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.csproj.CoreCompileInputs.cache
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.sourcelink.json
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.dll
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/refint/C#Work.dll
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.pdb
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/C#Work.genruntimeconfig.cache
+/Users/calebatchison/Desktop/Classes/Programming Languages/c#/C#Work/obj/Debug/net9.0/ref/C#Work.dll
